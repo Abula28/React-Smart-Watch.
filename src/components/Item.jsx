@@ -53,7 +53,7 @@ export const Item = () => {
           {currentTime}
         </div>
         <div
-          style={{ display: active ? "block" : "none" }}
+          style={{ display: active ? "flex" : "none" }}
           className="heart-rate"
         >
           <img className="heartImg" src={heart} alt="heart" />

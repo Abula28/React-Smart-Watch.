@@ -8,13 +8,14 @@
 
 .watch-img {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .watchImg {
     width: 500px;
   }
   .timer {
     position: absolute;
-    top: 230px;
-    left: 200px;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -23,8 +24,9 @@
   .heart-rate {
     position: absolute;
     display: none;
-    top: 200px;
-    left: 220px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .heartImg {
       transition: 0.6s;
       animation: heart 0.6s linear infinite;
@@ -32,7 +34,6 @@
     }
     p {
       color: white;
-      text-align: center;
       font-size: 25px;
       margin-top: 10px;
     }
@@ -53,7 +54,7 @@
 
   p {
     font-size: 15px;
-    width: 600px;
+    width: 60%;
     font-weight: 500;
   }
 
@@ -105,5 +106,78 @@
   }
   100% {
     transform: scale(0.8);
+  }
+}
+
+@media (max-width: 1200px) {
+  .item {
+    width: 100%;
+    gap: 80px;
+  }
+
+  .info-sect {
+    width: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  .item {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .info-sect {
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+    .buttons {
+      .btns {
+        width: 50px;
+        height: 30px;
+      }
+      button {
+        padding: 10px 10px;
+        font-size: 15px;
+      }
+    }
+
+    .buy-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .watch-img {
+    position: relative;
+    .watchImg {
+      width: 80%;
+    }
+
+    .heart-rate {
+      .heartImg {
+        width: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .info-sect {
+    .buttons {
+      gap: 5px;
+      .btns {
+        width: 40px;
+        height: 25px;
+      }
+    }
   }
 }
