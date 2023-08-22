@@ -6,23 +6,23 @@ export const Item = () => {
   const buttons = [
     {
       color: "#23211f",
-      imgSrc: "src/assets/imgs/watch-black.png",
+      imgSrc: "https://i.imgur.com/iOeUBV7.png",
     },
     {
       color: "#565681",
-      imgSrc: "src/assets/imgs/watch-blue.png",
+      imgSrc: "https://i.imgur.com/Mplj1YR.png",
     },
     {
       color: "#8a5362",
-      imgSrc: "src/assets/imgs/watch-purple.png",
+      imgSrc: "https://i.imgur.com/xSIK4M8.png",
     },
     {
       color: "#ca3d22",
-      imgSrc: "src/assets/imgs/watch-red.png",
+      imgSrc: "https://i.imgur.com/PTgQlim.png",
     },
     {
       color: "#e9c7be",
-      imgSrc: "src/assets/imgs/watch-pink.png",
+      imgSrc: "https://i.imgur.com/Zygu7I3.png",
     },
   ];
   const [watchImg, setWatchImg] = useState(
